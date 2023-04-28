@@ -20,11 +20,18 @@ body
     background-color: lightgray;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #main
 {
     width: 800px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header
@@ -33,12 +40,19 @@ body
     background-color: gray;
     list-style: none;
     border-radius: 10px;
+    margin-bottom: 0;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
     .header .menu
     {
         height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 3;
     }
 
         .header .menu a
@@ -50,7 +64,10 @@ body
 
     .header .social
     {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
     }
 
 .slider
@@ -72,6 +89,12 @@ body
     margin-top: 20px;
 }
 
+    .content p
+    {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+
 .widget
 {
     background-color: gray;
@@ -79,7 +102,20 @@ body
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
+
 }
+
+    .widget form
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .widget form > *
+    {
+        flex: 1;
+    }
+
 
 .footer
 {
